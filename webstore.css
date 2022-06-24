@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+nav{
+    border-bottom: 1px #ddd solid;
+}
+
+nav ul li{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#avatar-img:hover{
+    border:hsl(26, 100%, 55%) 2px solid;
+    cursor: pointer;
+}
+
+#cart{
+    top: 130%;
+    width: 170%;
+    box-shadow: 0 0 10px 0 #ddd;
+    display: none;
+}
+
+#cart-title{
+    border-bottom: 1px solid #ddd;
+} 
+
+#filled{
+    display: none;
+}
+
+#filled h6,
+#filled div{
+    font-size: 12px;
+}
+
+#filled .btn{
+    background-color: hsl(26, 100%, 55%);
+    color: #fff;
+    width: 90%;
+    margin: auto;
+    font-size: 12px;
+}
+
+#filled .btn:hover{
+    opacity: .5;
+}
+
+#filled #delete{
+    right: -20%;
+    top: 30%;
+    cursor: pointer;
+}
+
+.quantity-icon{
+    background-color: hsl(26, 100%, 55%);
+    color: #fff;
+    font-size: 8px;
+    left: 52%;
+    top: 15%;
+    display: none;
+}
+
+.thumbnails div{
+    width: 18%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.thumbnails .active img,
+.thumbnails div img:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+
+body img{
+    border-radius: 10px;
+}
+
+.right-side h6{
+    color: hsl(26, 100%, 55%);
+    font-size: 12px;
+}
+
+.right-side p,
+.right-side form #add{
+    font-size: 12px;
+}
+
+.right-side h4 span{
+    font-size: 12px;
+    color: hsl(26, 100%, 55%);
+    background-color: hsl(25, 100%, 94%);
+}
+
+#add:hover{
+    opacity: .5;
+}
+
+.light-box{
+    top: 0;
+    background-color: hsl(0, 0%, 0%);
+    opacity: .75;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.slide{
+    width: 30%;
+    display: none;
+}
+
+.close-icon{
+    top: -10%;
+    color: #fff;
+}
+
+.close-icon:hover{
+    color: hsl(26, 100%, 55%);
+}
+
+
+#previous,
+#next{
+    content:'';
+    z-index: 145;
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+
+#previous:hover,
+#next:hover{
+    color: hsl(26, 100%, 55%);
+}
+
+@media(max-width:450px){
+    .row .first .thumbnails{
+        display: none;
+    }
+
+    .right-side p{
+        font-size: 16px;
+    }
+
+    #add{
+        margin-top:16px ;
+        padding: 10px 0;
+        border-radius: 10px;
+    }
+
+}
